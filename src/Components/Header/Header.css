@@ -1,0 +1,35 @@
+.mainHeader{
+    display: flex;
+    background-color: black !important;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logoText{
+    color:#fff !important;
+    font-size: 30px;
+}
+
+.logoHeader{
+    margin: 20px !important;
+    margin-left: 20px !important;
+}
+
+.header-right{
+    margin-right: 20px !important;
+}
+.btn-Header{
+    margin:5px !important
+}
+.cart-icon{
+    color: #fff !important;
+    margin-left: 50px !important;
+    margin-right: 5px !important;
+    font-size: 30px !important;
+    cursor: pointer;
+}
+.cart-quantity{
+    color: #fff !important;
+    font-size: 18px;
+    font-weight: 600 !important;
+}
