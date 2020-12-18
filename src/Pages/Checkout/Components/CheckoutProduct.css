@@ -1,0 +1,14 @@
+.checkoutProduct{
+    display: flex;
+}
+
+.checkoutProduct__info{
+    
+}
+.checkoutProduct__rating{
+    display: flex;
+}
+
+.checkoutProduct__image{
+    max-width: 150px !important;
+}

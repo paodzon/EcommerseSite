@@ -11,6 +11,9 @@
     background-color: #fff;
     z-index: 1;
 }
+.product__rating{
+    display: flex;
+}
 
 .product > img {
     max-height: 200px;
