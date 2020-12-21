@@ -7,7 +7,7 @@ import { useStateValue } from "../../StateProvider";
 const Header = () => {
 
   const [{basket},dispatch] =useStateValue();
-
+  const basketLength =basket.map((items) =>items.quantity).reduce((a,b) => a+b,0);
   return (
     <nav className="mainHeader">
       <div className="logoHeader">
@@ -25,7 +25,7 @@ const Header = () => {
         </Button>
         <Link to="/checkout">
           <ShoppingCartIcon className="cart-icon" />
-          <span className="cart-quantity">{basket?.length}</span>
+          <span className="cart-quantity">{basketLength}</span>
         </Link>
       </div>
     </nav>

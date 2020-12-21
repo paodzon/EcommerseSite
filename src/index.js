@@ -5,13 +5,11 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { StateProvider } from "./StateProvider";
-import reducer, {initialState} from "./reducer";
+import reducer, { initialState } from "./reducer";
 ReactDOM.render(
-  <React.StrictMode>
-    <StateProvider initialState={initialState} reducer={reducer}>
-      <App />
-    </StateProvider>
-  </React.StrictMode>,
+  <StateProvider initialState={initialState} reducer={reducer}>
+    <App />
+  </StateProvider>,
   document.getElementById("root")
 );
 

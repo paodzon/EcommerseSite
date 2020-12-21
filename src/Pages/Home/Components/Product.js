@@ -1,14 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { useStateValue } from "../../../StateProvider";
 import "./Product.css";
+import Swal from 'sweetalert2';
 
 function Product({id, name,price,rating, img}) {
 
   const [{basket},dispatch] =useStateValue();
+  const addToBasket = (e)  =>{
 
 
-
-  const addToBasket = ()  =>{
     //dispatch the item into the data layer
     dispatch({
       type: 'ADD_TO_BASKET',
@@ -17,9 +17,13 @@ function Product({id, name,price,rating, img}) {
         title: name,
         rating: rating,
         img: img,
-        price, price,
+        price: price,
+        quantity:1,
       }
     })
+    e.preventDefault();
+    e.stopPropagation();
+
   }
 
   return (

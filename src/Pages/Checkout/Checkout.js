@@ -18,7 +18,8 @@ function Checkout() {
                     title={item.title}
                     img={item.img}
                     price={item.price}
-                    rating={item.rating}/>
+                    rating={item.rating}
+                    quantity={item.quantity}/>
                 ))}
             </div>
             <div className="summary">
