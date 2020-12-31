@@ -1,0 +1,13 @@
+.login__modal{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login__btn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top:20px;
+}
+.login__modal{
+    
+}

@@ -17,9 +17,13 @@
 
 .header-right{
     margin-right: 20px !important;
+    display: flex;
+    align-items: center;
 }
 .btn-Header{
-    margin:5px !important
+    margin:5px !important;
+    background-color: #222831 !important;
+    border-color: #fff !important;
 }
 .cart-icon{
     color: #fff !important;
@@ -32,4 +36,8 @@
     color: #fff !important;
     font-size: 18px;
     font-weight: 600 !important;
+}
+.header__auth{
+    display: flex;
+    align-items: center;
 }

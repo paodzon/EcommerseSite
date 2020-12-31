@@ -1,6 +1,9 @@
+import { PagesSharp } from "@material-ui/icons";
+
 export const initialState = {
   basket: [],
 };
+
 
 export const getBasketTotal = (basket) =>
   basket?.reduce((amount, item) => item.price * item.quantity + amount, 0);
@@ -30,8 +33,8 @@ const reducer = (state, action) => {
     case "REMOVE_FROM_BASKET":
       if (coIndex >= 0) {
         // item exists in basket, remove it...
-        console.log("removing");
         cloneBasket.splice(coIndex, 1);
+        console.log("removing");
       }
       return {
         ...state,
@@ -41,7 +44,6 @@ const reducer = (state, action) => {
     case "INCREASE_QTY":
       if (coIndex >= 0) {
         cloneBasket[coIndex].quantity++;
-        console.log("inc");
       }
       return {
         ...state,
@@ -50,16 +52,20 @@ const reducer = (state, action) => {
 
     case "DECREASE_QTY":
       if (coIndex >= 0) {
-        cloneBasket[coIndex].quantity--;
-        if (cloneBasket[coIndex].quantity === 0) {
-          cloneBasket.splice(coIndex, 1);
+        if (cloneBasket[coIndex].quantity > 1) {
+          cloneBasket[coIndex].quantity--;
         }
-        console.log("dec");
       }
       return {
         ...state,
         basket: cloneBasket,
       };
+
+    case "SET_USER":
+      return{
+        ...state,
+        user:action.user
+      }
 
     default:
       return state;

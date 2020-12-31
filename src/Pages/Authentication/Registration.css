@@ -1,0 +1,18 @@
+.registration{
+    display: flex;
+    justify-content: center;
+}
+
+.signup__box{
+    background-color: #fff;
+    padding:20px;
+    margin:50px;
+    min-width: 550px;
+    border-radius: 10px;
+}
+.signup__btn{
+    display: flex;
+    justify-content: flex-end;
+    margin:20px;
+    margin-right: 0 !important;
+}
