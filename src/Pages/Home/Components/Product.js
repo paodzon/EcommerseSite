@@ -17,6 +17,13 @@ function Product({ id, name, price, rating, img }) {
         quantity: 1,
       },
     });
+    Swal.fire({
+      icon: 'success',
+      title: 'Item added',
+      text: 'Item has been added to your cart',
+      timer: 2000,
+      showConfirmButton:false
+    })
     e.preventDefault();
     e.stopPropagation();
   };

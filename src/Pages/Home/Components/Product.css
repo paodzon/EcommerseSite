@@ -3,11 +3,10 @@
     flex-direction: column;
     margin: 10px !important;
     padding: 20px !important;
-
+    max-width: 300px;
     min-width: 100px;
     background-color: #fff;
     z-index: 1;
-    flex: 250px;
     
 }
 .product__image{

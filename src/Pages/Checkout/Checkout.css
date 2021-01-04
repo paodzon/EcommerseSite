@@ -8,10 +8,12 @@
     margin-right: auto !important;
 }
 .checkout__cart{
-    flex: 0.5;
+    flex: 0.7;
+    margin: 20px
 }
 .summary{
-    flex: 0.5;
+    margin-top: 20px;
+    flex: 0.3;
 }
 
 .checkout__title{
